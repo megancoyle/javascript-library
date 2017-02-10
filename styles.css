@@ -1,0 +1,81 @@
+/* SMK Accordion Styles*/
+
+.smk_accordion {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+/* Accordion Section */
+.smk_accordion .accordion_in {
+  position: relative;
+  z-index: 10;
+  margin-top: -1px;
+  overflow: hidden;
+}
+/* Accordion Head */
+.smk_accordion .accordion_in .acc_head {
+  position: relative;
+  font-size: 1.2em;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  color: #17b0cd;
+}
+
+.acc_head {
+    text-align: left;
+}
+
+.smk_accordion .accordion_in .acc_head .acc_icon_expand {
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -9px;
+  background: url(images/plusminus.png) center 0;
+}
+/* Accordion Content */
+.smk_accordion .accordion_in .acc_content {
+  color: #333;
+  padding: 0px 12px 10px 10px;
+  border-radius: 10px;
+}
+.smk_accordion .accordion_in .acc_content h1:first-of-type,
+.smk_accordion .accordion_in .acc_content h2:first-of-type,
+.smk_accordion .accordion_in .acc_content h3:first-of-type,
+.smk_accordion .accordion_in .acc_content h4:first-of-type,
+.smk_accordion .accordion_in .acc_content h5:first-of-type,
+.smk_accordion .accordion_in .acc_content h6:first-of-type {
+  margin-top: 5px;
+}
+/* Accordion General */
+.smk_accordion .accordion_in:first-of-type,
+.smk_accordion .accordion_in:first-of-type .acc_head {
+
+}
+.smk_accordion .accordion_in:last-of-type,
+.smk_accordion .accordion_in:last-of-type .acc_content {
+
+}
+.smk_accordion .accordion_in.acc_active > .acc_content {
+  display: block;
+}
+.smk_accordion .accordion_in.acc_active > .acc_head {
+
+}
+.smk_accordion .accordion_in.acc_active > .acc_head .acc_icon_expand {
+  background: url(images/plusminus.png) center -18px;
+}
+.smk_accordion.acc_with_icon .accordion_in .acc_head,
+.smk_accordion.acc_with_icon .accordion_in .acc_content {
+  padding-left: 40px;
+}
+
+.accordion_view.smk_accordion.acc_with_icon {
+    margin-bottom: 0;
+}
+/* End of Accordion Styles */
