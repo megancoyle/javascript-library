@@ -34,7 +34,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="#accordions">Accordions</a></li>
                   <li><a href="#modals">Modals</a></li>
-                  <li><a href="#tabs">Tabs</a></li>
+                  <li><a href="#tabs-to-accordion">Tabs to Accordion</a></li>
                   <li role="separator" class="divider"></li>
                   <li><a href="#carousels">Carousels</a></li>
                   <li role="separator" class="divider"></li>
@@ -135,48 +135,62 @@
           &lt;/div&gt;
         </code></pre>
 
-        <h2 id="tabs">Tabs</h2>
-        <div>
-
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab 1</a></li>
-            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Tab 2</a></li>
-            <li role="presentation"><a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Tab 3</a></li>
-            <li role="presentation"><a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Tab 4</a></li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="tab1">Tab 1 content</div>
-            <div role="tabpanel" class="tab-pane" id="tab2">Tab 2 content</div>
-            <div role="tabpanel" class="tab-pane" id="tab3">Tab 3 content</div>
-            <div role="tabpanel" class="tab-pane" id="tab4">Tab 4 content</div>
+        <h2 id="tabs-to-accordion">Tabs to Accordion</h2>
+        <ul class="tabs">
+          <li class="active" rel="tab1">Tab 1</li>
+          <li rel="tab2">Tab 2</li>
+          <li rel="tab3">Tab 3</li>
+        </ul>
+        <div class="tab_container">
+          <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+          <div id="tab1" class="tab_content">
+          <h2>Tab 1 heading</h2>
+            <p>Tab 1 content</p>
           </div>
-
+          <!-- #tab1 -->
+          <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+          <div id="tab2" class="tab_content">
+          <h2>Tab 2 heading</h2>
+            <p>Tab 2 content</p>
+          </div>
+          <!-- #tab2 -->
+          <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+          <div id="tab3" class="tab_content">
+          <h2>Tab 3 heading</h2>
+            <p>Tab 3 content</p>
+          </div>
+          <!-- #tab3 -->
         </div>
+        <!-- .tab_container -->
 
         <pre><code>
-        &lt;div&gt;
-
-            <!-- Nav tabs -->
-            &lt;ul class="nav nav-tabs" role="tablist"&gt;
-              &lt;li role="presentation" class="active"&gt;&lt;a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
-              &lt;li role="presentation"&gt;&lt;a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
-              &lt;li role="presentation"&gt;&lt;a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
-              &lt;li role="presentation"&gt;&lt;a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"&gt;Tab 4&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul>
-
-            <!-- Tab panes -->
-            &lt;div class="tab-content"&gt;
-              &lt;div role="tabpanel" class="tab-pane active" id="tab1"&gt;Tab 1 content&lt;/div&gt;
-              &lt;div role="tabpanel" class="tab-pane" id="tab2"&gt;Tab 2 content&lt;/div&gt;
-              &lt;div role="tabpanel" class="tab-pane" id="tab3"&gt;Tab 3 content&lt;/div&gt;
-              &lt;div role="tabpanel" class="tab-pane" id="tab4"&gt;Tab 4 content&lt;/div&gt;
-            &lt;/div&gt;
-
+          &lt;ul class="tabs"&gt;
+            &lt;li class="active" rel="tab1"&gt;Tab 1&lt;/li&gt;
+            &lt;li rel="tab2">Tab 2&lt;/li&gt;
+            &lt;li rel="tab3">Tab 3&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class="tab_container"&gt;
+            &lt;h3 class="d_active tab_drawer_heading" rel="tab1"&gt;Tab 1&lt;/h3&gt;
+            &lt;div id="tab1" class="tab_content"&gt;
+            &lt;h2&gt;Tab 1 content&lt;/h2&gt;
+              &lt;p&gt;Tab 1 content&lt;/p&gt;
+            &lt;/div>
+            &lt;!-- #tab1 --&gt;
+            &lt;h3 class="tab_drawer_heading" rel="tab2"&gt;Tab 2&lt;/h3&gt;
+            &lt;div id="tab2" class="tab_content"&gt;
+            &lt;h2&gt;Tab 2 content&lt;/h2&gt;
+              &lt;p&gt;Tab 2 content&lt;/p&gt;
+            &lt;/div>
+            <!-- #tab2 -->
+            &lt;h3 class="tab_drawer_heading" rel="tab3"&gt;Tab 3&lt;/h3&gt;
+            &lt;div id="tab3" class="tab_content"&gt;
+            &lt;h2&gt;Tab 3 content&lt;/h2&gt;
+              &lt;p&gt;Tab 3 content&lt;/p&gt;
+            &lt;/div>&gt;
+            &lt;!-- #tab3 --&gt;
           &lt;/div&gt;
-        </code></pre>
+          &lt;!-- .tab_container --&gt;
+        </pre></code>
 
         <h2 id="carousels">Carousels</h2
           <div>
