@@ -87,35 +87,68 @@
             &lt;/div>
         </code></pre>
 
-        <h2 id="tabs-to-accordion">Tabs to Accordion</h2>
-
-        <ul class="tabs">
-          <li class="active" rel="tab1">Tab 1</li>
-          <li rel="tab2">Tab 2</li>
-          <li rel="tab3">Tab 3</li>
-        </ul>
-        <div class="tab_container">
-          <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
-          <div id="tab1" class="tab_content">
-          <h2>Tab 1 heading</h2>
-            <p>Tab 1 content</p>
+        <h2>Tabs to Accordion</h2>
+        <div id="tabs-to-accordion" class="accordion-container">
+          <ul class="tabs">
+            <li class="active" rel="tab1">Tab 1</li>
+            <li rel="tab2">Tab 2</li>
+            <li rel="tab3">Tab 3</li>
+          </ul>
+          <div class="tab_container">
+            <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+            <div id="tab1" class="tab_content">
+            <h3>Tab 1 heading</h3>
+              <p>Tab 1 content</p>
+            </div>
+            <!-- #tab1 -->
+            <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+            <div id="tab2" class="tab_content">
+            <h3>Tab 2 heading</h3>
+              <p>Tab 2 content</p>
+            </div>
+            <!-- #tab2 -->
+            <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+            <div id="tab3" class="tab_content">
+            <h3>Tab 3 heading</h3>
+              <p>Tab 3 content</p>
+            </div>
+            <!-- #tab3 -->
           </div>
-          <!-- #tab1 -->
-          <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
-          <div id="tab2" class="tab_content">
-          <h2>Tab 2 heading</h2>
-            <p>Tab 2 content</p>
-          </div>
-          <!-- #tab2 -->
-          <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
-          <div id="tab3" class="tab_content">
-          <h2>Tab 3 heading</h2>
-            <p>Tab 3 content</p>
-          </div>
-          <!-- #tab3 -->
+          <!-- .tab_container -->
         </div>
-        <!-- .tab_container -->
 
+        <!-- add second tab to accordion -->
+        <h2>Tabs to Accordion 2</h2>
+        <div id="tabs-to-accordion-2" class="accordion-container">
+          <ul class="tabs">
+            <li class="active" rel="tab1">Tab 1</li>
+            <li rel="tab2">Tab 2</li>
+            <li rel="tab3">Tab 3</li>
+          </ul>
+          <div class="tab_container">
+            <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+            <div id="tab1" class="tab_content">
+            <h3>Tab 1 heading</h3>
+              <p>Tab 1 content</p>
+            </div>
+            <!-- #tab1 -->
+            <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
+            <div id="tab2" class="tab_content">
+            <h3>Tab 2 heading</h3>
+              <p>Tab 2 content</p>
+            </div>
+            <!-- #tab2 -->
+            <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
+            <div id="tab3" class="tab_content">
+            <h3>Tab 3 heading</h3>
+              <p>Tab 3 content</p>
+            </div>
+            <!-- #tab3 -->
+          </div>
+          <!-- .tab_container -->
+        </div>
+
+      </div>
         <pre><code>
           &lt;ul class="tabs"&gt;
             &lt;li class="active" rel="tab1"&gt;Tab 1&lt;/li&gt;
