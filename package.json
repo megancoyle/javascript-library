@@ -1,0 +1,27 @@
+{
+  "name": "javascript-library",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "uglifyjs ./js/* -o scripts.min.js",
+    "uglify": "npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megancoyle/javascript-library.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megancoyle/javascript-library/issues"
+  },
+  "homepage": "https://github.com/megancoyle/javascript-library#readme",
+  "dependencies": {
+    "uglify-js": "^2.8.8"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.8.8"
+  }
+}
