@@ -2,7 +2,7 @@
   "name": "javascript-library",
   "version": "1.0.0",
   "description": "",
-  "author": "",
+  "author": "Megan Coyle",
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
