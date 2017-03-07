@@ -166,4 +166,8 @@ jQuery(document).ready(function($){
 		$(".accordion_view").smk_Accordion({
 				closeAble: true, //boolean
 			});
+
+
+		// Stacking Tables
+		$('.stackable-table').stacktable({myClass:'mobile-table'});
 });

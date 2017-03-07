@@ -152,3 +152,17 @@ ul.tabs li.active {
     color: #fff;
   }
 }
+
+.mobile-table {
+  display: none;
+}
+
+/* Responsive Tables Styles */
+@media screen and (max-width: 600px) {
+  table.stackable-table.stacktable.large-only {
+    display: none;
+  }
+  .mobile-table {
+    display: block;
+  }
+}
