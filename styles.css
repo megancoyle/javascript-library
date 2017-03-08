@@ -36,7 +36,7 @@
   left: 10px;
   top: 50%;
   margin-top: -9px;
-  background: url(images/plusminus.png) center 0;
+  background: url(assets/plusminus.png) center 0;
 }
 /* Accordion Content */
 .smk_accordion .accordion_in .acc_content {
@@ -68,7 +68,7 @@
 
 }
 .smk_accordion .accordion_in.acc_active > .acc_head .acc_icon_expand {
-  background: url(images/plusminus.png) center -18px;
+  background: url(assets/plusminus.png) center -18px;
 }
 .smk_accordion.acc_with_icon .accordion_in .acc_head,
 .smk_accordion.acc_with_icon .accordion_in .acc_content {
@@ -166,3 +166,5 @@ ul.tabs li.active {
     display: block;
   }
 }
+
+/* Image Styles */
