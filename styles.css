@@ -29,6 +29,9 @@
 	vertical-align:top;
 	text-align:left;
 }
+.media img{
+	max-width: 100%;
+}
 .media_image{
 	display:block;
 }
