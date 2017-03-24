@@ -22,95 +22,69 @@
     -o-transform:scale(1.2); /* Opera */
 }
 
-/* Text overlay image animation */
-.item-type-line {
-	text-align:center;
-	margin:5px;
+/* Text overlay */
+.media{
+	display:inline-block;
 	position:relative;
-	display: inline-block;
+	vertical-align:top;
+	text-align:left;
 }
-
-.item-container {
-	height: 250px;
+.media_image{
+	display:block;
 }
-
-.item-hover,
-.item-hover .mask,
-.item-img,
-.item-info {
-	width: 400px;
-	height: 200px;
-}
-
-.item-hover,
-.item-hover .mask,
-.item-img {
+.media_body{
+	background:#a9b1b4;
+	bottom:0;
+	color:white;
+	font-size:1em;
+	left:0;
+	opacity:0;
+	overflow:hidden;
+	padding:2.75em 4em;
 	position:absolute;
 	top:0;
-	left:0;
+	right:0;
+	-webkit-transition:0.6s;
+	transition:0.6s;
 }
-
-.item-type-line .item-hover {
-	z-index:100;
-	-webkit-transition: all 300ms ease-out;
-	-moz-transition: all 300ms ease-out;
-	-o-transition: all 300ms ease-out;
-	transition: all 300ms ease-out;
-	opacity:0;
-	cursor:pointer;
-	display:block;
-	text-decoration:none;
-	text-align:center;
-}
-
-.item-type-line .item-info {
-	z-index:10;
-	color:#ffffff;
-	display:table-cell;
-	vertical-align:middle;
-	position:relative;
-	z-index:5;
-}
-
-.item-type-line .item-info .headline {
-	font-size:20px;
-}
-
-.item-type-line .item-info .line {
-	 height:1px;
-	 width:0%;
-	 margin:15px auto;
-	 background-color:#ffffff;
-	-webkit-transition: all 500ms ease-out;
-	-moz-transition: all 500ms ease-out;
-	-o-transition: all 500ms ease-out;
-	transition: all 500ms ease-out;
-
-}
-
-.item-type-line .item-info .date {
-	font-size:12px;
-}
-
-.item-type-line .item-hover .mask {
-	background-color:#000;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=50);
-	opacity:0.5;
-	z-index:0;
-}
-
-.item-type-line .item-hover:hover .line {
-	width:40%;
-}
-
-.item-type-line .item-hover:hover {
+.media_body:hover{
 	opacity:1;
 }
-
-.item-img {
-	background-color:#7a548f;
-	z-index:0;
+.media_body:after,.media_body:before{
+	border:1px solid rgba(255,255,255,0.7);
+	bottom:1em;
+	content:'';
+	left:1em;
+	opacity:0;
+	position:absolute;
+	right:1em;
+	top:1em;
+	-webkit-transform:scale(1.5);
+	-ms-transform:scale(1.5);
+	transform:scale(1.5);
+	-webkit-transition:0.6s 0.2s;
+	transition:0.6s 0.2s;
+}
+.media_body:before{
+	border-bottom:none;
+	border-top:none;
+	left:2em;
+	right:2em;
+}
+.media_body:after{
+	border-left:none;
+	border-right:none;
+	bottom:2em;top:2em;
+}
+.media_body:hover:after,.media_body:hover:before{
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1);
+	opacity:1;
+}
+.media_body p{
+	font-size:1.4em;
+	color:white;
 }
 
 /* SMK Accordion Styles*/
